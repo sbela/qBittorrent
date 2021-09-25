@@ -137,7 +137,7 @@ int main(int argc, char *argv[])
 #if !defined(DISABLE_GUI)
     // Attribute Qt::AA_EnableHighDpiScaling must be set before QCoreApplication is created
     if (qgetenv("QT_ENABLE_HIGHDPI_SCALING").isEmpty() && qgetenv("QT_AUTO_SCREEN_SCALE_FACTOR").isEmpty())
-        Application::setAttribute(Qt::AA_EnableHighDpiScaling, true);
+        Application::setAttribute(Qt::AA_EnableHighDpiScaling, false);
     // HighDPI scale factor policy must be set before QGuiApplication is created
     if (qgetenv("QT_SCALE_FACTOR_ROUNDING_POLICY").isEmpty())
         Application::setHighDpiScaleFactorRoundingPolicy(Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);

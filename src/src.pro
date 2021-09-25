@@ -1,6 +1,7 @@
 # Global
 TEMPLATE = app
 CONFIG += qt thread silent
+CONFIG += c++2a
 
 # Platform specific configuration
 win32: include(../winconf.pri)
